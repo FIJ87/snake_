@@ -20,31 +20,10 @@ namespace ConsoleApplication1
 
             Point p4 = new Point(6, 9, '=');
 
-            List<int> numList = new List<int>();
-            numList.Add(0);
-            numList.Add(1);
-            numList.Add(2);
-
-            int x = numList[0];
-            int y = numList[1];
-            int z = numList[2];
-
-
-            foreach (int i in numList)
-            {
-                Console.WriteLine(i);
-            }
-
-            numList.RemoveAt(0);
-
-            List<Point> pList = new List<Point>();
-            pList.Add(p1);
-            pList.Add(p2);
-
-            List<Point> pList2 = new List<Point>();
-            pList2.Add(p3);
-            pList2.Add(p4);
-
+            horizontline line = new horizontline(5,10,8, '+');
+            line.Drow();
+            Verticalline line2 = new Verticalline(10, 20, 7, '$');
+            line2.Drow();
             Console.ReadLine();
         }
        
