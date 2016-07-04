@@ -20,10 +20,14 @@ namespace ConsoleApplication1
 
             Point p4 = new Point(6, 9, '=');
 
-            horizontline line = new horizontline(5,10,8, '+');
-            line.Drow();
-            Verticalline line2 = new Verticalline(10, 20, 7, '$');
-            line2.Drow();
+            horizontline upline = new horizontline(0,78,0, '+');
+            upline.Drow();
+            horizontline downline = new horizontline(0, 78, 24, '+');
+            downline.Drow();
+            Verticalline leftline = new Verticalline(0, 24, 0, '+');
+            leftline.Drow();
+            Verticalline rightline = new Verticalline(0, 24, 78, '+');
+            rightline.Drow();
             Console.ReadLine();
         }
        
